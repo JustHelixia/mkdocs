@@ -1,0 +1,43 @@
+site_name: Helixeus-IT Docs
+
+nav:
+  - Home: index.md
+  - Homelab lessons:
+    - Proxmox: proxmox.md
+    - Docker: docker.md
+    - Resources: recourses.md
+  - Docker containers:
+    - Portainer: portainer.md
+    - Speedtest Tracker: speedtest-tracker.md
+    - Uptime Kuma: uptime-kuma.md
+    - Gotify: gotify.md
+    - Pi-Hole: pihole.md
+    - Nginx Proxy Manager: npm.md
+    - Fenrus: fenrus.md
+    - Firefly III: firefly3.md
+    - Wallos: wallos.md
+    - Beszel: beszel.md
+    - MkDocs: mkdocs.md
+  - Other deploys:
+    - Proxmox: proxmox.md
+    - Snipe-IT: snipe-it.md
+    - Jenkins: jenkins.md
+
+theme:
+   name: 'material'
+   palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
