@@ -25,7 +25,8 @@ nav:
 
 theme:
    name: 'material'
-   favicon: images/LetterH112.png
+   favicon: assets/images/helixeus.png
+   logo: assets/images/logo.png
    palette:
     # Palette toggle for automatic mode     
     - media: "(prefers-color-scheme)"
@@ -35,7 +36,7 @@ theme:
 
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light blue
+      primary: grey
       accent: blue
       toggle:
         icon: material/weather-night
@@ -43,7 +44,7 @@ theme:
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
+      primary: blue grey
       accent: cyan
       toggle:
         icon: material/weather-sunny
