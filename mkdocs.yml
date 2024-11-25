@@ -25,8 +25,9 @@ nav:
 
 theme:
    name: 'material'
+   favicon: images/LetterH112.png
    palette:
-    # Palette toggle for automatic mode
+    # Palette toggle for automatic mode     
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
@@ -39,7 +40,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-        
+
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
