@@ -5,7 +5,7 @@ nav:
   - Homelab lessons:
     - Proxmox: proxmox.md
     - Docker: docker.md
-    - Resources: recourses.md
+    - Resources: resources.md
   - Docker containers:
     - Portainer: portainer.md
     - Speedtest Tracker: speedtest-tracker.md
@@ -19,7 +19,6 @@ nav:
     - Beszel: beszel.md
     - MkDocs: mkdocs.md
   - Other deploys:
-    - Proxmox: proxmox.md
     - Snipe-IT: snipe-it.md
     - Jenkins: jenkins.md
 
