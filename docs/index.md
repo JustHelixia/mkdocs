@@ -9,3 +9,5 @@ And they also advice companies on buying new devices.
 
 Their friendly and knowlegdeable servicedesk is always happy to help their customers. 
 The system administrators also monitor, maintain and create the Docker containers.
+
+In reality this is a website of a homelabber who wants to document her journey into homelabbing.

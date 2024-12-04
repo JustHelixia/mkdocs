@@ -22,7 +22,7 @@ nav:
   #  - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md
 
-thesme:
+theme:
    name: 'material'
    favicon: assets/images/helixeus.png
    logo: assets/images/logo.png
