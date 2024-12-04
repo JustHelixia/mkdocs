@@ -5,7 +5,7 @@ When I first started with my homelab I was searching for a way to easily manage 
 On Youtube I quickly found videos about Portainer and how to use Portainer to manage your stacks (basicly your Docker Compose yml files), containers and so on.
 As a Docker newbie it was pretty exciting to make my very first Docker Compose file and install Portainer.
 
-## Installating &
+## Installating & upadting Portainer
 I am running an Ubuntu 22.04.5 LTS VM to run my Portainer installation.
 In hindsight this could also be installed in LXC container (I am sure about that).
 Since it was a new VM I needed to get Docker to install Portainer and get it running.
