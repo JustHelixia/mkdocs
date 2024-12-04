@@ -8,21 +8,21 @@ nav:
     - Resources: resources.md
   - Docker containers:
     - Portainer: portainer.md
-    - Speedtest Tracker: speedtest-tracker.md
-    - Uptime Kuma: uptime-kuma.md
-    - Gotify: gotify.md
-    - Pi-Hole: pihole.md
-    - Nginx Proxy Manager: npm.md
-    - Fenrus: fenrus.md
-    - Firefly III: firefly3.md
-    - Wallos: wallos.md
-    - Beszel: beszel.md
-    - MkDocs: mkdocs.md
-  - Other deploys:
-    - Snipe-IT: snipe-it.md
-    - Jenkins: jenkins.md
+  #  - Speedtest Tracker: speedtest-tracker.md
+  #  - Uptime Kuma: uptime-kuma.md
+  #  - Gotify: gotify.md
+  #  - Pi-Hole: pihole.md
+  #  - Nginx Proxy Manager: npm.md
+  #  - Fenrus: fenrus.md
+  #  - Firefly III: firefly3.md
+  #  - Wallos: wallos.md
+  #  - Beszel: beszel.md
+  #  - MkDocs: mkdocs.md
+  #- Other deploys:
+  #  - Snipe-IT: snipe-it.md
+  #  - Jenkins: jenkins.md
 
-theme:
+thesme:
    name: 'material'
    favicon: assets/images/helixeus.png
    logo: assets/images/logo.png
