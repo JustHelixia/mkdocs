@@ -63,11 +63,11 @@ volumes:
 ```
 
 ## Custom environment settings
-- DISPLAY_TIMEZONE - To make sure the right time is displayed on my internet speed tests
-- CHART_DATETIME_FORMAT=d-m-o, H:i - day of the month-month-full year, 24-hours display with leading zeros, minutes with leading zeros
-- DATETIME_FORMAT=l j F o, H:i - weekday, day of the month, fully wriiten month year, 24-hours display with leading zeros, minutes with leading zeros
-- SPEEDTEST_SCHEDULE="0 * * * *" - Everyday and every hour Speedtest Tracker does a speedtest.
-- PRUNE_RESULTS_OLDER_THAN=14 - Results older than 14 days are being removed 
+- `DISPLAY_TIMEZONE` - To make sure the right time is displayed on my internet speed tests
+- `CHART_DATETIME_FORMAT=d-m-o, H:i` - day of the month-month-full year, 24-hours display with leading zeros, minutes with leading zeros
+- `DATETIME_FORMAT=l j F o, H:i` - weekday, day of the month, fully wriiten month year, 24-hours display with leading zeros, minutes with leading zeros
+- `SPEEDTEST_SCHEDULE="0 * * * *"` - Everyday and every hour Speedtest Tracker does a speedtest.
+- `PRUNE_RESULTS_OLDER_THAN=14` - Results older than 14 days are being removed 
 
 ## Used resouces
 - [DB techs YT video](https://www.youtube.com/watch?v=feArak6WCLw)
