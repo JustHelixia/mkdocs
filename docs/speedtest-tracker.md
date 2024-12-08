@@ -5,7 +5,7 @@ I was looking up Docker container to deploy first as my very first Docker contai
 It took me a few tries to get right and spend much time customizing it.
 In Portainer I added the Speedtest-tracker software stack as a Docker Compose file.  
 
-```yaml
+``` yaml linenums="1"
 services: 
   speedtest-tracker:
     container_name: speedtest-tracker
