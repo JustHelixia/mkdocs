@@ -4,7 +4,7 @@
 Gotify is a self-hosted application to receive notification when if something is wrong with your homelab.  
 They have many intergrations to receive notifications from.  
   
-I have plugged the following applications:
+I have plugged the following applications:  
 - Uptime Kuma
 - Watchtower
 - Speedtest-tracker
