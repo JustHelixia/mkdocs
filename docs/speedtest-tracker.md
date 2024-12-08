@@ -2,6 +2,8 @@
 
 ## Introduction
 I was looking up Docker container to deploy first as my very first Docker container.  
+First I tried MySpeed which was a simple deploy, but I wanted more information about the health of my internet connection.  
+So I choose Speedtest Tracker
 It took me a few tries to get right and spend much time customizing it.
 In Portainer I added the Speedtest-tracker software stack as a Docker Compose file.  
 
@@ -24,9 +26,9 @@ services:
       - DB_USERNAME=speedy
       - DB_PASSWORD=NicePasswordHere
       - DISPLAY_TIMEZONE=Europe/Amsterdam
-      - CHART_DATETIME_FORMAT=d-m-o, H:i # day of the month-month-full year, 24-hours display with leading zeros, minutes with leading zeros (https://www.php.net/manual/en/datetime.format.php)
-      - DATETIME_FORMAT=l j F o, H:i # weekday, day of the month, fully wriiten month year, 24-hours display with leading zeros, minutes with leading zeros (https://www.php.net/manual/en/datetime.format.php)
-      - SPEEDTEST_SCHEDULE="0 * * * *" # Every hour, every day (https://it-tools.tech/crontab-generator)
+      - CHART_DATETIME_FORMAT=d-m-o, H:i
+      - DATETIME_FORMAT=l j F o, H:i
+      - SPEEDTEST_SCHEDULE="0 * * * *"
       - PRUNE_RESULTS_OLDER_THAN=14
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
@@ -59,3 +61,17 @@ volumes:
     name: speedtest_tracker_db_data
     driver: local
 ```
+
+## Custom environment settings
+- DISPLAY_TIMEZONE - To make sure the right time is displayed on my internet speed tests
+- CHART_DATETIME_FORMAT=d-m-o, H:i - day of the month-month-full year, 24-hours display with leading zeros, minutes with leading zeros
+- DATETIME_FORMAT=l j F o, H:i - weekday, day of the month, fully wriiten month year, 24-hours display with leading zeros, minutes with leading zeros
+- SPEEDTEST_SCHEDULE="0 * * * *" - Everyday and every hour Speedtest Tracker does a speedtest.
+- PRUNE_RESULTS_OLDER_THAN=14 - Results older than 14 days are being removed 
+
+## Used resouces
+- [DB techs YT video](https://www.youtube.com/watch?v=feArak6WCLw)
+- [Speedtest tracker docs](https://docs.speedtest-tracker.dev/)
+- [DateTime formatting](https://www.php.net/manual/en/datetime.format.php)
+- [Cron job generator](https://it-tools.tech/crontab-generator)
+- [My Github raw file](https://github.com/JustHelixia/Portainer-Templates/blob/master/Docker%20Compose%20files/Speedtest-Tracker.yml)
