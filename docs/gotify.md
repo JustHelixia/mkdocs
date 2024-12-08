@@ -5,11 +5,11 @@ Gotify is a self-hosted application to receive notification when if something is
 They have many intergrations to receive notifications from.  
   
 I have plugged the following applications:  
-- Uptime Kuma
-- Watchtower
-- Speedtest-tracker
-- Wallos
-- Beszel
+- Uptime Kuma  
+- Watchtower  
+- Speedtest-tracker  
+- Wallos  
+- Beszel  
 
 ## Docker Deployment
 This is just a very simple Docker Compose file to get it running.  
