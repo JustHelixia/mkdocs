@@ -9,7 +9,7 @@ nav:
   - Docker containers:
     - Portainer: portainer.md
     - Speedtest Tracker: speedtest-tracker.md
-  #  - Uptime Kuma: uptime-kuma.md
+    - Uptime Kuma: uptime-kuma.md
   #  - Gotify: gotify.md
   #  - Pi-Hole: pihole.md
   #  - Nginx Proxy Manager: npm.md
