@@ -10,8 +10,7 @@ nav:
     - Portainer: portainer.md
     - Speedtest Tracker: speedtest-tracker.md
     - Uptime Kuma: uptime-kuma.md
-  #  - Gotify: gotify.md
-  #  - Pi-Hole: pihole.md
+    - Gotify: gotify.md
   #  - Nginx Proxy Manager: npm.md
   #  - Fenrus: fenrus.md
   #  - Firefly III: firefly3.md
