@@ -8,7 +8,7 @@ nav:
     - Resources: resources.md
   - Docker containers:
     - Portainer: portainer.md
-  #  - Speedtest Tracker: speedtest-tracker.md
+    - Speedtest Tracker: speedtest-tracker.md
   #  - Uptime Kuma: uptime-kuma.md
   #  - Gotify: gotify.md
   #  - Pi-Hole: pihole.md
