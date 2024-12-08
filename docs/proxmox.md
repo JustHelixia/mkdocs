@@ -9,6 +9,6 @@ This is pretty much needed to run the whole homelab.
 Life saving commands if container does not respond in the Proxmox GUI.
 
 1. Connect to the CLI of your Proxmox server
-2. Then list the containers: **pct list**
-3. Try to shutdown the container in the CLI first: **sudo pct shutdown <CONTAINER-ID>**
-4. If that does not work you can force the container to poweroff: **sudo pct shutdown <CONTAINER-ID> --forceStop 1**
+2. Then list the containers: `pct list`
+3. Try to shutdown the container in the CLI first: `sudo pct shutdown <CONTAINER-ID>`
+4. If that does not work you can force the container to poweroff: `sudo pct shutdown <CONTAINER-ID> --forceStop 1`
