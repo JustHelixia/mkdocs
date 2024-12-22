@@ -6,6 +6,7 @@ nav:
     - Proxmox: proxmox.md
     - Docker: docker.md
     - Resources: resources.md
+    - Configuring SSH: ssh-config.md
   - Docker containers:
     - Portainer: portainer.md
     - Speedtest Tracker: speedtest-tracker.md
