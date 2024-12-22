@@ -18,8 +18,8 @@ nav:
   #  - Wallos: wallos.md
   #  - Beszel: beszel.md
   #  - MkDocs: mkdocs.md
-  #- Other deploys:
-  #  - Snipe-IT: snipe-it.md
+  - Other deploys:
+    - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md
 
 theme:
