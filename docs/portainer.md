@@ -44,3 +44,7 @@ If you decide to update Portainer you can follow these steps below to update Por
 8. When all went well you can access your Portainer installation with the newest Portainer version.
 
 Source: [Updating Portainer](https://docs.portainer.io/start/upgrade)
+
+## Resources
+- [Portainer website](https://www.portainer.io/)
+- [Portainer Github](https://github.com/portainer/portainer)

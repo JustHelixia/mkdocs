@@ -27,3 +27,12 @@ services:
       - './logos:/var/www/html/images/uploads/logos' # Stores logos uploaded to the app.
     restart: unless-stopped                         # Ensures the container restarts automatically unless manually stopped.
 ````
+6. Then click on **Deploy stack**
+ 
+After deploying Wallos you can access Wallos on http://SERVERIP:8282.  
+  
+## Resources:
+- [Wallos website](https://www.wallosapp.com/)
+- [Wallos Github](https://github.com/ellite/Wallos)
+- [DB Tech tuurial](https://www.youtube.com/watch?v=gqqk8WTOZ3Q&t=424s)
+- [Techdox tutorial](https://www.youtube.com/watch?v=Qq6pCwjnNM8)

@@ -63,8 +63,6 @@ If you would like to get notifications about Speedtests which ran or about there
 4. Enable the desired triggers
 5. Under **Webhooks** paste your Gotify URL as follows:  
 `https://gotify.yourdomain.com/message?token=TOKEN`  
-  
-*That's it!*
 
 ### Wallos
 1. Login to your Wallos instance

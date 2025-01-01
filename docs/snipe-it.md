@@ -19,3 +19,8 @@ You can check out their [documentation](https://snipe-it.readme.io/docs/installa
 Have fun getting started with Snipe-IT!  
 Check out their [getting started](https://snipe-it.readme.io/docs/getting-started) section.  
 I have learned also new things from the documentation after using Snipe-IT.
+
+## Resources 
+- [Snipe-it website](https://snipeitapp.com/)
+- [Snipe-it Github](https://github.com/snipe/snipe-it)
+- [Snipe-it documentation](https://snipe-it.readme.io/docs/introduction)
