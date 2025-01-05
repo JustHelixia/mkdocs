@@ -13,10 +13,10 @@ nav:
     - Uptime Kuma: uptime-kuma.md
     - Gotify: gotify.md
     - Nginx Proxy Manager: npm.md
-  #  - Fenrus: fenrus.md
-  #  - Firefly III: firefly3.md
+    - Fenrus: fenrus.md
+    - Firefly III: firefly3.md
     - Wallos: wallos.md
-  #  - Beszel: beszel.md
+    - Beszel: beszel.md
     - MkDocs: mkdocs.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
