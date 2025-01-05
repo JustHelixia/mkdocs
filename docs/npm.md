@@ -58,9 +58,9 @@ services:
 
  6. Then click on **Deploy stack**  
    
- ## Rescources
-- [NPM website](https://nginxproxymanager.com/)
-- [NPM documentation](https://nginxproxymanager.com/guide/)
-- [NPM Github](https://github.com/NginxProxyManager/nginx-proxy-manager)
-- [Christians tutorial](https://www.youtube.com/watch?v=P3imFC7GSr0)
-- [Wolfgang's tutorial](https://www.youtube.com/watch?v=qlcVx-k-02E)
+ ## Rescources  
+- [NPM website](https://nginxproxymanager.com/)  
+- [NPM documentation](https://nginxproxymanager.com/guide/)  
+- [NPM Github](https://github.com/NginxProxyManager/nginx-proxy-manager)  
+- [Christians tutorial](https://www.youtube.com/watch?v=P3imFC7GSr0)  
+- [Wolfgang's tutorial](https://www.youtube.com/watch?v=qlcVx-k-02E)  
