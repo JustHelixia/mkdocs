@@ -82,12 +82,12 @@ markdown_extensions: # Configure the markdown extension.
   - pymdownx.snippets
   - pymdownx.superfences
 ````
-More information about creating the configuration file.
-- [Creating](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
-- [Customization](https://squidfunk.github.io/mkdocs-material/customization/)
-- [Theming](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
-- [Markdown extension](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
-- [Extension list](https://squidfunk.github.io/mkdocs-material/setup/extensions/)
+More information about creating the configuration file.  
+  - [Creating](https://squidfunk.github.io/mkdocs-material/creating-your-site/)
+  - [Customization](https://squidfunk.github.io/mkdocs-material/customization/)
+  - [Theming](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+  - [Markdown extension](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
+  - [Extension list](https://squidfunk.github.io/mkdocs-material/setup/extensions/)
 
 5. After configuring your initial website you can start your Docker container by running `docker compose up`
    
