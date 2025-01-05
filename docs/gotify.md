@@ -4,7 +4,7 @@
 Gotify is a self-hosted application to receive notification when if something is wrong with your homelab.  
 They have many intergrations to receive notifications from.  
   
-I have plugged the following applications:  
+I have plugged in the following applications:  
 - Uptime Kuma  
 - Watchtower  
 - Speedtest-tracker  
@@ -84,4 +84,3 @@ If you would like to get notifications about Speedtests which ran or about there
 - [Gotify site](https://gotify.net/)
 - [Gotify documentation](https://gotify.net/docs/index)
 - [Gotify Github](https://github.com/gotify)
-- [My Gotfy config](https://github.com/JustHelixia/Portainer-Templates/blob/master/Docker%20Compose%20files/Gotify.yml)

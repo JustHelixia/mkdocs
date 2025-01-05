@@ -75,4 +75,3 @@ volumes:
 - [Speedtest-tracker GitHub](https://github.com/alexjustesen/speedtest-tracker)
 - [DateTime formatting](https://www.php.net/manual/en/datetime.format.php)
 - [Cron job generator](https://it-tools.tech/crontab-generator)
-- [My Github raw file](https://github.com/JustHelixia/Portainer-Templates/blob/master/Docker%20Compose%20files/Speedtest-Tracker.yml) 

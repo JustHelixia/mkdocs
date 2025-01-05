@@ -55,7 +55,6 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
 ````
-
  6. Then click on **Deploy stack**  
    
  ## Rescources  
