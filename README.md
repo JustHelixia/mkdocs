@@ -1,6 +1,6 @@
 ## Helixeus-IT
 
-Helixeus-IT is a fictional IT service company which is hosting Docker applications. 
+Helixeus-IT is a fictional IT service company which is hosting Docker applications.  
 It also supplies the customers with test Docker containers to test their own applications.  
   
 Besides managing the Docker containers.  
