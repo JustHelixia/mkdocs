@@ -57,7 +57,7 @@ services:
 ````
  6. Then click on **Deploy stack**  
    
- ## Rescources  
+## Rescources  
 - [NPM website](https://nginxproxymanager.com/)  
 - [NPM documentation](https://nginxproxymanager.com/guide/)  
 - [NPM Github](https://github.com/NginxProxyManager/nginx-proxy-manager)  
