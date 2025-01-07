@@ -47,13 +47,13 @@ services:
 Disabling the account: `usermod -L -e 1 abc`  
 Changing the password: swith to the abs user and change the password.  
   
-## Environment values
+## Environment variables
 If you are as new as me to Docker then you might notice some values which are unknow to you.  
-Below I will describe these values.  
-- **security_opt: - seccomp: unconfined** - If you are running on an older host system you need to enable this option to run modern GUI apps properly. I have set this option just in case although I run a modern mini-PC.
-- **volumes:** - Remember that value to setup syncing.
-- **devices: - /dev/dri:/dev/dri** - This will enable DRI3 GPU acceleration. Intel, AMD and Nvidia GPUs are supported.
-- **shm_size: "1gb"** - This is needed for Obsidian to launch properly, because it is an Electron application.
+Below I will describe these variables.  
+- **security_opt: - seccomp: unconfined** - If you are running on an older host system you need to enable this option to run modern GUI apps properly. I have set this option just in case although I run a modern mini-PC.  
+- **volumes:** - Remember that value to setup syncing.  
+- **devices: - /dev/dri:/dev/dri** - This will enable DRI3 GPU acceleration. Intel, AMD and Nvidia GPUs are supported.  
+- **shm_size: "1gb"** - This is needed for Obsidian to launch properly, because it is an Electron application.  
   
 ## Resources
 - [MRP tutorial on Obsidian+Syncthing](https://www.youtube.com/watch?v=KVZmLjt270c)
