@@ -18,6 +18,7 @@ nav:
     - Wallos: wallos.md
     - Beszel: beszel.md
     - MkDocs: mkdocs.md
+    - Obsidian: obsidian.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md
