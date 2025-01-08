@@ -50,6 +50,7 @@ Changing the password: swith to the abs user and change the password.
 ## Environment variables
 If you are as new as me to Docker then you might notice some values which are unknow to you.  
 Below I will describe these variables.  
+- **CUSTOM_USER + PASSWORD** - Set an user and password if you would like to use your own username and password.    
 - **security_opt: - seccomp: unconfined** - If you are running on an older host system you need to enable this option to run modern GUI apps properly. I have set this option just in case although I run a modern mini-PC.  
 - **volumes:** - Remember that value to setup syncing.  
 - **devices: - /dev/dri:/dev/dri** - This will enable DRI3 GPU acceleration. Intel, AMD and Nvidia GPUs are supported.  

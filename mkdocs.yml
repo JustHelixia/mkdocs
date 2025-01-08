@@ -19,6 +19,7 @@ nav:
     - Beszel: beszel.md
     - MkDocs: mkdocs.md
     - Obsidian: obsidian.md
+    - Syncthing: syncthing.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md

@@ -73,5 +73,7 @@ volumes:
 - [DB techs YT video](https://www.youtube.com/watch?v=feArak6WCLw)
 - [Speedtest tracker docs](https://docs.speedtest-tracker.dev/)
 - [Speedtest-tracker GitHub](https://github.com/alexjustesen/speedtest-tracker)
+- [Speedtest-tracker Docker container](https://fleet.linuxserver.io/image?name=linuxserver/speedtest-tracker)
+- [Speedtest-tracker container documentation](https://docs.linuxserver.io/images/docker-speedtest-tracker/)
 - [DateTime formatting](https://www.php.net/manual/en/datetime.format.php)
 - [Cron job generator](https://it-tools.tech/crontab-generator)
