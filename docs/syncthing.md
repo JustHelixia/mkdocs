@@ -6,7 +6,7 @@ This is an adjuction of the Obsidian article.
 Just could that is the magic sauce to keep the Obsidian vault synced everywhere!
 
 ## Deploying Syncthing
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method

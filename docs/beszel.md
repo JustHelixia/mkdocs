@@ -7,7 +7,7 @@ While it is a lightweight and simple application it has beautful interface (in m
 ## Install the Beszel server
 The application will be deployed in Portainer.  
   
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method

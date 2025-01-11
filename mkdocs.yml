@@ -20,6 +20,7 @@ nav:
     - MkDocs: mkdocs.md
     - Obsidian: obsidian.md
     - Syncthing: syncthing.md
+    - Watchtower: watchtower.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md

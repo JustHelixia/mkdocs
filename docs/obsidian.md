@@ -13,7 +13,7 @@ Obsidian is being hosted in a Kasm workplace Docker container.
 Kasm is an application which let's you run 1 or more application in a Docker container.  
 In this article I am going to deploy this Docker container in Portainer with Docker Compose.  
   
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method

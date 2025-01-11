@@ -11,7 +11,7 @@ Within NPM you are also secure your websites by using SSL-certificates from lets
 I am using Portainer and Docker compose to install NPM.
 (I might move this container to a LXC container on my Proxmox server.)
 
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method

@@ -33,7 +33,7 @@ After initially logging in to your Gotify instance navigate to the top to **APPS
 On the Applications page click on **create application** to add an Name, Short Description and the priority and create a token.
 
 ### Uptime Kuma
-1. Login to your Uptime Kuma installation
+1. Login to your Uptime Kuma instance
 2. Click on your profile -> Settings
 3. Select **Notifications**
 4. Click on **Setup Notifications**

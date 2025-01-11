@@ -7,7 +7,7 @@ And sometimes you can also check the health of your services from the dashboard.
 You can also group your services.  
   
 ## Deploying the container
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method

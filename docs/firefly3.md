@@ -5,7 +5,7 @@ Firefly III is financial management application.
 It has many features so at times which is way too m uch to get into in this article.  
   
 ## Deploying Firefly III
-1. Navigate to your Portainer installation
+1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
 3. Click on **Add stack**
 4. Give the stack a name select the **Web editor** as build method
