@@ -21,6 +21,7 @@ nav:
     - Obsidian: obsidian.md
     - Syncthing: syncthing.md
     - Watchtower: watchtower.md
+    - FreshRSS: freshrss.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
   #  - Jenkins: jenkins.md
