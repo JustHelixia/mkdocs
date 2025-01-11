@@ -2,8 +2,7 @@
 
 ## Introduction
 A while back I was using a RSS reader and I wanted to find a self hosted solution to get news from websites I am interested in.  
-I find it easier to use a RSS reader rather than going to every website or using something Google news.  
-Oh. There are no cookie walls.  
+I find it easier to use a RSS reader rather than going to every website or using something Google news. Oh. There are no cookie walls.  
 Besides that you also can Youtube channels to the feed by using their channels URL, (collections of) Subreddits among other things.  
   
 ## Deploying
