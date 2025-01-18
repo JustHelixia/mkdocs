@@ -43,6 +43,7 @@ services:
     By disabling these options you make your Syncthing instancce just a bit safer especially if you want to expose Syncthing instance.  
     I would advise against it and instead expose your Obsidian instance to the internet.
 4. Install Obsidian + Syncthing client on your Debian/Ubuntu based client computer and perform steps 1 through 3  
+   If you are using a non Debian/Ubuntu client computer you can use the application Syncthingy.
 5. Set up the connection between the server and the client side  
     1. On the client navigate to **Actions -> Show ID** and copy the Device ID
     2. On the server click on **Add Remote Device**
