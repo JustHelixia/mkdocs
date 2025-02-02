@@ -5,8 +5,8 @@ nav:
   - Homelab lessons:
     - Proxmox: proxmox.md
     - Docker: docker.md
-    - Resources: resources.md
     - Configuring SSH: ssh-config.md
+    - Resources: resources.md
   - Docker containers:
     - Portainer: portainer.md
     - Speedtest Tracker: speedtest-tracker.md
@@ -24,6 +24,7 @@ nav:
     - FreshRSS: freshrss.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
+    - Ollama+Open-WebUI: ollama-openwebgui.md
   #  - Jenkins: jenkins.md
 
 theme:
