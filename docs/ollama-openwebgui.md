@@ -2,7 +2,7 @@
 
 ## Introduction
 With the latest AI innovations and Deepseek it has become easier to run AI-models on less powerfull hardware.  
-I decided to give it a spin on my own desktop with deepseek-r1:14b, because the mini-PC I use for self hosting does not have a dedicated GPU.  v
+I decided to give it a spin on my own desktop with deepseek-r1:14b, because the mini-PC I use for self hosting does not have a dedicated GPU.  
 The route I have taken is to install Ollama and Open WEbUI without using Docker instead I used the install script from Ollama and Python to run Open WebUI.  
   
 ## Installing Ollama
