@@ -67,7 +67,7 @@ done
 1. Make sure you have Python 3.11 installed: `ls /usr/bin/python3*`
 2. If not, install Python 3.11 `sudo dnf install pyhton3.11` (Fedora) or `sudo apt install python3.11` (Debian/Ubuntu)
 3. Create a virtual Python environment `python3.11 -m venv venv`
-4. Activate the virtual environment `venv\Scripts\activate`
+4. Activate the virtual environment `source venv/bin/activate` (Linux/MacOS), `venv\Scripts\activate` (windows)
 5. Install Open WebUI (This step takes a while) `pip install open-webui`
 6. Start the Open WebUI server `open-webui serve`
   
@@ -75,9 +75,11 @@ done
 You can also use screen to run Open WebUI in a detached manner.  
   
 1. Start the screen session `screen -S open-webui`
-2. Run the command `open-webui serve`
-3. Press CTRL+a, then d to detach the screen
-4. Make sure the screen is still running `screen -ls`
+2. Create a virtual Python environment `python3.11 -m venv venv`
+3. Activate the virtual environment `source venv/bin/activate` (Linux/MacOS), `venv\Scripts\activate` (windows)
+4. Run the command `open-webui serve`
+5. Press CTRL+a, then d to detach the screen
+6. Make sure the screen is still running `screen -ls`
   
 Now you can start using Open WebUI by inserting one of the following addresses `localhost:8080` or `IPADDRESS:8080`.  
 You can also use Docker to run this stack, but I choose to run it without Docker, because I otherwise have no access to my GPU.  
