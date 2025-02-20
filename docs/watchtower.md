@@ -36,7 +36,7 @@ services:
       # Watchtower only notifies
       - WATCHTOWER_MONITOR_ONLY=true
       # you can tell watchtower to do updates and restarts one by one - can be helpful
-      # - WATCHTOWER_ROLLING_RESTART=true
+      # - WATCHTOWER_ROLLING_RESTART=true #
 
       # Gotify notifications
       - WATCHTOWER_NOTIFICATIONS=gotify
