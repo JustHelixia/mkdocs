@@ -3,7 +3,7 @@
 ## Introduction
 A while back I was using a RSS reader and I wanted to find a self hosted solution to get news from websites I am interested in.  
 I find it easier to use a RSS reader rather than going to every website or using something Google news. Oh. There are no cookie walls.  
-Besides that you also can Youtube channels to the feed by using their channels URL, (collections of) Subreddits among other things.  
+Besides that you also can add Youtube channels to the feed by using their channels URL, (collections of) Subreddits in the old Reddit layout among other things.  
   
 ## Deploying
 1. Navigate to your Portainer instance
@@ -31,7 +31,7 @@ services:
 ## Post deploying
 First go to your FreshRSS instance and walk through the installation process.  
 Then login where you see the feeds about FreshRSS.  
-You can your own websites with an OPML file or add your RSS subscription manually.
+You can your add own RSS websites with an OPML file or add your RSS subscription manually.
 
 ### Importing your OPML, JSON or ZIP file
 1. Click on **Subscription management**
@@ -62,7 +62,7 @@ Before you choose any (mobile) app you need to enable **Allow API access** withi
 5. Create a strong password and insert under **External access via API -> API password** and click on **Submit**
 6. Then click on the link after **Check API status via:**
 7. On that page you can check your API status for Google Reader and Fever  
-You may see the following message: *WARN: Probable invalid base URL in ./data/config.php*. This is not mean the API does not work.
+You may see the following message: *WARN: Probable invalid base URL in ./data/config.php*. This does not mean the API is broken.
 8. To check if the APIs are OK you can do the following
     - Google Reader API: https://freshrss.yourdomain.com/api/greader.php
     When the page say **OK** all is well.
@@ -74,7 +74,7 @@ After the setting up the API access your use your username, API password and API
 On mobile I used Feedme, but I ended up liking Readrops more.  
 Both apps have the option to select FreshRSS as a service and setting it up is really easy.  
   
-On my Linux desktop I use the Newsflash app to read my subscriptions from FreshRSS.  
+On my Linux desktop I use the Newsflash app to read my subscriptions, but I ran into errors and I am reading the feed on my FreshRSS feed instead.
     
 ## Resources
 - [Lawrance's tutorial](https://www.youtube.com/watch?v=wcof-Noho9Q)

@@ -14,8 +14,8 @@ If you forget `-d` then you cannot run Docker detached which causes you not bein
   
 When inspecting the Docker run command you notice similarities with a Docker Compose file:  
 - -d -> detached mode  
-- --restart=always -> is the restart policy  
-- -p -> stands for the ports needs to be used external and internal  
+- --restart=always -> Tells Docker to always start the container   
+- -p -> stands for the ports needs to be used externally and internally  
 - -v -> this stands for volume to set Docker volumes  
 - -name -> is the name of the servive  
 - IMAGE -> this is the last part where you define which image you are going to use  

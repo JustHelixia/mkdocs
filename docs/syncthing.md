@@ -3,7 +3,7 @@
 ## Introduction
 Syncthing is being used to sync files/folders between devices.  
 This is an adjuction of the Obsidian article.  
-Just could that is the magic sauce to keep the Obsidian vault synced everywhere!
+By adding Synchting you added the last ingredient to the magic sauce to keep the Obsidian vault synced everywhere!
 
 ## Deploying Syncthing
 1. Navigate to your Portainer instance

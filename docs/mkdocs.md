@@ -89,7 +89,7 @@ More information about creating the configuration file.
   [Markdown extension](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)  
   [Extension list](https://squidfunk.github.io/mkdocs-material/setup/extensions/)  
 
-5. After configuring your initial website you can start your Docker container (`docker compose up`)  
+5. After configuring your initial website you can start your Docker container (`docker compose up -d`)  
   
 ## Rescources  
 - [MkDocs website](https://www.mkdocs.org/)

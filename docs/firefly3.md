@@ -1,8 +1,8 @@
 # Firefly III
 
 ## Introduction
-Firefly III is financial management application.  
-It has many features so at times which is way too m uch to get into in this article.  
+Firefly III is a financial management application.  
+It has many features so at times which is way too much to get into in this article.  
   
 ## Deploying Firefly III
 1. Navigate to your Portainer instance

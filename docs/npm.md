@@ -1,8 +1,8 @@
 # Nginx Proxy Manager
 
 ## Introduction
-Nginx Proxy Manager (NPM) is a reverse proxy maanger you can use this to replace IP-addresses with domainnames.  
-You can use .local or get a free domain name with a service like [duckdns](https://www.duckdns.org/). 
+Nginx Proxy Manager (NPM) is a reverse proxy manager you can use this to replace IP-addresses with domainnames.  
+You can use .local or get a free domain name with a service like [duckdns](https://www.duckdns.org/).  
 For example you can use a domainname for your Portainer installation.  
   
 Within NPM you are also secure your websites by using SSL-certificates from letsencrypt and doing a DNS on your recently aquired domain.  

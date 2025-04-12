@@ -2,7 +2,7 @@
 
 ## Introduction
 Homepage is a dashboard for your homelab just like Fenrus.  
-The big difference is that configuring the dashboard is a bit more difficult, because you don't use a GUI instead you are using yaml files.  
+The big difference the configuration is more difficult than Fenrus, because you don't use a GUI instead you are using yaml files.  
 
 ## Deploying Homepage
 This time I decided to deploye this Docker container a little bit different.  

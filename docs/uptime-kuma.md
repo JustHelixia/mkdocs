@@ -4,7 +4,7 @@
 With Uptime Kuma you can monitor the status of your hosts running on your homelab.  
 Or you can monitor other hosts outside your homelab.  
 You can also setup status pages to only show hosts on your Portainer installations and/or running on your Proxmox.  
-If you think about Cachet or Statuspage, this is a simpler version if these tools.  
+If you think about Cachet or Statuspage, this is a simpler version of these tools.  
 
 ## Deploying Uptime Kuma
 Deploying is very simple.  

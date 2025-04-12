@@ -1,7 +1,7 @@
 # Speedtest Tracker
 
 ## Introduction
-I was looking up Docker container to deploy first as my very first Docker container.  
+I was looking up Docker containers to deploy first as my very first Docker container.  
 First I tried MySpeed which was a simple deploy, but I wanted more information about the health of my internet connection.  
 So I choose Speedtest Tracker
 It took me a few tries to get right and spend much time customizing it.

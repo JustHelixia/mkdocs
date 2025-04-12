@@ -6,7 +6,7 @@ For me that sounded really exciting!
 I also wanted a way to work from any device on some files in my Obsidian vault.  
 For the mentioned above you will setup something like Syncthing.  
 I will describe how to setup Syncthing in another article on the website.  
-Letś go and deploy Obsidian!  
+Let's go and deploy Obsidian!  
   
 ## Deploying
 Obsidian is being hosted in a Kasm workplace Docker container.  
@@ -43,7 +43,7 @@ services:
 ````
 *The volume value will become important in the Syncthing atricle.*  
 6. Then click on **Deploy stack**  
-7. The Docker container comes with a default username abc (with password abc) and you might wanne disable the account or change its password.  
+7. The Docker container comes with a default username abc (with password abc) and you might wanna disable the account or change its password.  
 Disabling the account: `usermod -L -e 1 abc`  
 Changing the password: swith to the abs user and change the password.  
   

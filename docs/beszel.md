@@ -1,7 +1,7 @@
 # Beszel
 
 ## Introduction
-Beszel us a very simple and lightweight tool to monitor your servers and Docker containers.  
+Beszel is a very simple and lightweight tool to monitor your servers and Docker containers.  
 While it is a lightweight and simple application it has beautful interface (in my opinion).  
   
 ## Install the Beszel server
@@ -28,14 +28,14 @@ services:
 
 ## Adding your servers to Beszel server
 It is a very simple process by installing the very small Beszel agent on your target server(s).  
-In my opinion is to install Beszel agent via SSH, because I have troubles on some servers by doing this in Proxmox.  
+I used SSH to install Beszel agent on my server(s), because I have trouble on some servers by doing this in Proxmox.  
 
 ### Beszel web interface  
 1. Navigate to your Bezsel installation
 2. Click on **Add System** in the right corner
 3. Insert the name of the system in the **Name**
 4. Add the Host / IP in the **Host / IP** field
-5. If needed the port change the port if the noted port is already in use or if you want to use another
+5. When needed change the port if the noted port is already in use or if you want to use another
 
 ### Target system
 For these steps you need to install Docker and Docker Compose.  

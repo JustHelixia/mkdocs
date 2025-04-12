@@ -1,7 +1,7 @@
 # Fenrus
 
 ## Introduction
-Fenrus is a pretty simple dashboard application if you are new to Homelab dashboards in general.  
+Fenrus is a pretty simple dashboard application if you are new to Homelab dashboards in general this is an excellent starting point.  
 You can list your services on the dashboard and open them by clicking on them.  
 And sometimes you can also check the health of your services from the dashboard.  
 You can also group your services.  

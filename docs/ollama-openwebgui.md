@@ -8,7 +8,7 @@ The route I have taken is to install Ollama and Open WEbUI without using Docker 
 ## Installing Ollama
 1. Download and install Ollama `curl -fsSL https://ollama.com/install.sh | sh` (The Linux way)  
 If you run another OS you can check the [download page](https://ollama.com/download) to install Ollama.
-2. Install your desired model(s)`ollama run MODEL`
+2. Install your desired model(s) `ollama run MODEL`  v
 You can find a list of [available models](https://ollama.com/search) on Ollama
   
 ## Bash script to start Ollama in the terminal

@@ -1,7 +1,7 @@
 # Wallos
 
 ## Introduction
-If you like to track your subscriptions?  
+If you like to track your subscriptions.  
 Then you should take a look at Wallos.  
 With Wallos you can track the costs, experiation date and more.  
 

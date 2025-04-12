@@ -10,10 +10,10 @@ So I ended up using a helper script to install.
   
 ## Getting the helper script on your server
 I installed a Ubuntu 22.04 server in a LXC container to deploy Snpie-IT.  
-After updating, upgradingand rebooting the server I ran the commaond below:  
+After updating, upgrading and rebooting the server I ran the command below:  
 `bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/ct/snipeit.sh)"`
 
-If you do not want to use a helper there are also other ways to install Snipe-IT.  
+If you do not want to use a helper script there are also other ways to install Snipe-IT.  
 You can check out their [documentation](https://snipe-it.readme.io/docs/installation).  
 
 Have fun getting started with Snipe-IT!  

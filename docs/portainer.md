@@ -20,10 +20,10 @@ Since it was a new VM I needed to get Docker to install Portainer and get it run
 
 ### Installing Portainer on Docker
 1. Create a volume for Portainer server to store its database: `docker volume create portainer_data`
-2. Download and install the Portainer Server container: `docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.4` (2.21.4 is the latest versiom at the time of writing.)
-3. You can check if the Portainer Server is: `docker ps:`
+2. Download and install the Portainer Server container: `docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest` (2.21.4 is the latest versiom at the time of writing or use the latest tag.)
+3. You can check if the Portainer Server is: `docker ps`
     There you should see the Portainer Server container.
-4. If everything went you can check if you can access Portainer.
+4. If everything went well you can check if you can access Portainer.
     https://IPADDRESS:9443 (If you used the default port when installing)
 5. After the page loads you can create an account and start using Portainer!
 
@@ -35,7 +35,7 @@ Source: [Installing Portainer](https://docs.portainer.io/start/install-ce/server
 3. Click on **Environment-related -> Environment**
 4. Click in the right corner on **+ Add environment**
 5. Then select **Docker Standalone** and click on **Start Wizard**
-6. Keep the selection on **Agent and** give the new environment a name and insert the IP-address of the desired host.  
+6. Keep the selection on **Agent** and give the new environment a name and insert the IP-address of the desired host.  
 *Remember: You can find the IP-address on your host with the ip a command.*  
 7. Copy the Docker run command and paste in your desired server.
 8. After these steps your new environment should appear in Portainer from there you have limited management capabilities.  
@@ -52,8 +52,8 @@ If you decide to update Portainer you can follow these steps below to update Por
 3. Login to your Portainer server via Proxmox or SSH
 4. Stop Portainer: `docker stop portainer`
 5. Remove the Portainer image: `docker rm portainer`
-6. Pull the new image: `docker pull portainer/portainer-ce:2.21.4` (At the moment 2.21.4 is the newest version)
-7. Deploy the updated version of Portainer: `docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.4` (At the moment 2.21.4 is the newest version)
+6. Pull the new image: `docker pull portainer/portainer-ce:latest` (At the moment 2.21.4 is the newest version or ust the latest tag)
+7. Deploy the updated version of Portainer: `docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest` (At the moment 2.21.4 is the newest version or use the latest tag)
 8. When all went well you can access your Portainer installation with the newest Portainer version.
 
 Source: [Updating Portainer](https://docs.portainer.io/start/upgrade)  
