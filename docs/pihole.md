@@ -99,7 +99,7 @@ To find what Unbound exactly is you can check out [the Pi-Hole documentation abo
 Perform the installation in the terminal of your PiHole instance.  
 1. `sudo apt install unbound`  
 2. `wget https://www.internic.net/domain/named.root -qO- | sudo tee /var/lib/unbound/root.hints`  
-3. Create the following file - `sudo /etc/unbound/unbound.conf.d/pi-hole.conf  
+3. Create the following file - `sudo /etc/unbound/unbound.conf.d/pi-hole.conf`  
 4. Copy text below to add the basis configuration:  
   
 ```conf
@@ -178,6 +178,7 @@ server:
     private-address: 2001:db8::/32
 ```  
   
+#### After the initial configuration  
 5. Just to be sure reboot the server to apply the configuration  
 6. Perform the following command `dig pi-hole.net @127.0.0.1 -p 5335`  
    The first time this command will be slow, but the second time it should go a bit quicker.  
