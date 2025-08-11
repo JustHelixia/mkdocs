@@ -26,6 +26,7 @@ nav:
   - Other deploys:
     - Snipe-IT: snipe-it.md
     - Ollama+Open-WebUI: ollama-openwebgui.md
+    - Pi-Hole: pihole.md
   #  - Jenkins: jenkins.md
 
 theme:
