@@ -5,53 +5,62 @@ I was tried of all the telemetry and adds and I wanted to set up something than 
 I choose Pi-hole as my solution, because has set it up and I decided to do it again also.
 
 The reasons I wanted to set up Pi-hole:  
-- Lower my dependence on an extension  
-- Lowering the risks of having extensions in the browser  
+
+ - Lower my dependence on an extension  
+ - Lowering the risks of having extensions in the browser  
 
 I installed Pi-Hole and added the following things:  
-- Unbound  
-- Direct my domain look ups locally  
-- Set my local domain by adding my top domain and CNAME records  
+
+ - Unbound  
+ - Direct my domain look ups locally  
+ - Set my local domain by adding my top domain and CNAME records  
 
 ### Prerequisites:
+
 - Recommended system requirements:
 	- 2 core CPU
 	- 8 GB Storage
 	- 512 GB RAM
 
 ### Preparations:
-Make sure your system is up to date and the needed updates are installed:
-- `sudo apt update && sudo apt upgrade -y` 
-- `sudo apt install curl`  
-- static IP-address in Proxmox or CLI  
+
+Make sure your system is up to date and the needed updates are installed:  
+ - `sudo apt update && sudo apt upgrade -y` 
+ - `sudo apt install curl`  
+ - static IP-address in Proxmox or CLI  
 
 #### Changing the DNS-server
 
 ##### In the terminal:
+
  1. `sudo` `nano` `/etc/systemd/resolved.conf`
  2. Pi-Hole: Change the values DNS to the router and FallbackDNS to an external DNS server or a secondary DNS server.
  3. Host: Change the values DNS to Pi-hole and FallbackDNS to an external DNS server or a secondary DNS server.
  4. Reboot the machine
  5. Use the `dig` command to check the DNS settings
 ##### On a Proxmox container client
+
 1. Navigate to **container -> DNS**
 2. Change the DNS server to the Pi-Hole
 3. For good measure reboot the container
 ##### On Proxmox VM client with Cloud-Init
+
 1. Navigate to **VM -> Cloud-Init**
 2. Change the DNS servers value to the Pi-Hole IP-address
 
 ## Installation:
-1. First download and run the installation script: 
+
+1. First download and run the installation script:  
    `curl -sSL https://install.pi-hole.net | bash
 2. Follow the prompts
 3. Log in with the provided URLs and password
 4. Explore Pi-Hole
-5. (Optional) Add your local user to the pihole group:
+5. (Optional) Add your local user to the pihole group:  
    `sudo usermod -aG pihole $USER
 
 ## Configuring Pi-Hole
 ### Adding clients
+
 1. Navigate to **GROUP MANAGEMENT  -> Clients**
 2. If the client is known you can click the client to add it
 3. When the client is unknown you can  add it by manually inserting its IP-address
@@ -166,37 +175,39 @@ server:
     private-address: 255.255.255.255/32
     private-address: 2001:db8::/32
 ```
-5. Just to be sure reboot the server to apply the configuration
-6. Perform the following command `dig pi-hole.net @127.0.0.1 -p 5335`
-   The first time this command will be slow, but the second time it should go a bit quicker.
-7. Now we will continue to validate the Unbound configuration by performing additional dig commands.
-8. Perform `dig fail01.dnssec.works @127.0.0.1 -p 5335` this should give you timeouts, because no servers can be reached
-9. The following command should give a NOERROR report: `dig +ad dnssec.works @127.0.0.1 -p 5335`
 
-### Let Pi-Hole use Unbound as DNS-server
-Now the configuration of Unbound is done you now use Unbound within Pi-Hole.
-1. Login to Pi-Hole
-2. Navigate to **SYSTEM -> DNS**
-3. Expand the **Custom DNS servers** option.
-4. If you set up Unbound you can add **127.0.0.1#5335** to point to the Unbound DNS server.
-
+5. Just to be sure reboot the server to apply the configuration  
+6. Perform the following command `dig pi-hole.net @127.0.0.1 -p 5335`  
+   The first time this command will be slow, but the second time it should go a bit quicker.  
+7. Now we will continue to validate the Unbound configuration by performing additional dig commands.  
+8. Perform `dig fail01.dnssec.works @127.0.0.1 -p 5335` this should give you timeouts, because no servers can be reached  
+9. The following command should give a NOERROR report: `dig +ad dnssec.works @127.0.0.1 -p 5335`  
+  
+### Let Pi-Hole use Unbound as DNS-server  
+Now the configuration of Unbound is done you now use Unbound within Pi-Hole.  
+1. Login to Pi-Hole  
+2. Navigate to **SYSTEM -> DNS**  
+3. Expand the **Custom DNS servers** option.  
+4. If you set up Unbound you can add **127.0.0.1#5335** to point to the Unbound DNS server.  
+  
 ## Useful Pi-Hole command
-To close up I want to share some Pi-Hole commands which are useful for me.
-
-Pihole commands:
-- pihole -up - Updating Pi-Hole
-- pihole -v - Checking the Pi-Hole versions
-- pihole -d - Run Pi-Hole diagnostics
-- pihole status - Check the status of Pi-Hole
-- pihole disable 5m - Disable the protection of Pi-Hole
-- pihole enable - Enable Pi-Hole protection
-- pihole -g - Update Pi-Hole gravity (block and allow lists)
+To close up I want to share some Pi-Hole commands which are useful for me.  
+  
+Pihole commands:  
+  
+- pihole -up - Updating Pi-Hole  
+- pihole -v - Checking the Pi-Hole versions  
+- pihole -d - Run Pi-Hole diagnostics  
+- pihole status - Check the status of Pi-Hole  
+- pihole disable 5m - Disable the protection of Pi-Hole  
+- pihole enable - Enable Pi-Hole protection  
+- pihole -g - Update Pi-Hole gravity (block and allow lists)  
 
 Resources: 
-- [Basic install](https://docs.pi-hole.net/main/basic-install)
-- [Post install](https://docs.pi-hole.net/main/post-install/)
-- [Groups Management](https://docs.pi-hole.net/group_management/)
-- [Upstream DNS Provider](https://docs.pi-hole.net/guides/dns/upstream-dns-providers/)
-- [Unbound setup](https://docs.pi-hole.net/guides/dns/unbound/)
-- [Pihole commands](https://docs.pi-hole.net/main/pihole-command/)
-- [The Firebog](https://firebog.net/)
+  
+- [Basic install](https://docs.pi-hole.net/main/basic-install)  
+- [Post install](https://docs.pi-hole.net/main/post-install/)  
+- [Groups Management](https://docs.pi-hole.net/group_management/)  
+- [Upstream DNS Provider](https://docs.pi-hole.net/guides/dns/upstream-dns-providers/)  
+- [Unbound setup](https://docs.pi-hole.net/guides/dns/unbound/)  
+- [Pihole commands](https://docs.pi-hole.net/main/pihole-command/)  
