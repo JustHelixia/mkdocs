@@ -1,16 +1,18 @@
 # Pi-Hole
 
 ## Introduction
-I was tried of all the telemetry and adds and I wanted to set up something than ad-block plus in my extension. I choose Pi-hole as my solution, because has set it up and I decided to do it again also.
+I was tried of all the telemetry and adds and I wanted to set up something than ad-block plus in my extension.  
+I choose Pi-hole as my solution, because has set it up and I decided to do it again also.
 
-The reasons I wanted to set up Pi-hole:
-- Lower my dependence on an extension
-- Lowering the risks of having extensions in the browser
+The reasons I wanted to set up Pi-hole:  
+- Lower my dependence on an extension  
+- Lowering the risks of having extensions in the browser  
 
-I installed Pi-Hole and added the following things:
-- Unbound
-- Direct my domain look ups locally
-- Set my local domain by adding my top domain and CNAME records
+I installed Pi-Hole and added the following things:  
+- Unbound  
+- Direct my domain look ups locally  
+- Set my local domain by adding my top domain and CNAME records  
+
 ### Prerequisites:
 - Recommended system requirements:
 	- 2 core CPU
@@ -19,9 +21,9 @@ I installed Pi-Hole and added the following things:
 
 ### Preparations:
 Make sure your system is up to date and the needed updates are installed:
-- `sudo apt update && sudo apt upgrade -y
-- `sudo apt install curl
-- static IP-address in Proxmox or CLI
+- `sudo apt update && sudo apt upgrade -y` 
+- `sudo apt install curl`  
+- static IP-address in Proxmox or CLI  
 
 #### Changing the DNS-server
 
