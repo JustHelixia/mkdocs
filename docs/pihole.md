@@ -51,12 +51,12 @@ Make sure your system is up to date and the needed updates are installed:
 ## Installation:
 
 1. First download and run the installation script:  
-   `curl -sSL https://install.pi-hole.net | bash
+   `curl -sSL https://install.pi-hole.net | bash`
 2. Follow the prompts
 3. Log in with the provided URLs and password
 4. Explore Pi-Hole
 5. (Optional) Add your local user to the pihole group:  
-   `sudo usermod -aG pihole $USER
+   `sudo usermod -aG pihole $USER`
 
 ## Configuring Pi-Hole
 ### Adding clients
@@ -64,7 +64,7 @@ Make sure your system is up to date and the needed updates are installed:
 1. Navigate to **GROUP MANAGEMENT  -> Clients**
 2. If the client is known you can click the client to add it
 3. When the client is unknown you can  add it by manually inserting its IP-address
-4. Optionally you can create groups by navigating to **GROUP MANAGEMENT -> Groups**
+4. Optionally you can create groups by navigating to **GROUP MANAGEMENT -> Groups**  
    You can use then later by including or excluding each group from a list. (later more about lists)
 
 ### Lists
@@ -85,21 +85,23 @@ I have set up conditional forwarding with the following template:
 If you own a domain you can your domain name with CNAME records.
 This will handle your domain requests locally.
 
-1. Navigate to SYSTEM -> Settings -> Local DNS Records
+1. Navigate to **SYSTEM -> Settings -> Local DNS Records**
 2. Under List of local DNS records you can add your domain(s)
-3. Insert your domain name under Domain.
-   Point to your reverse proxy by inserting the IP-address in the IP-column.
-4. Under List of local CNAME records you can add your subdomains unfortunately wildcards do not work when you add a subdomain.
+3. Insert your domain name under Domain.  
+   Point to your reverse proxy by inserting the IP-address in the IP-column.  
+   Example domain: helixeus-it.nl  
+4. Under List of local CNAME records you can add your subdomains unfortunately wildcards do not work when you add a subdomain.  
    Example: docs.helixeus-it.nl
-5. Then point the subdomain to your desired domain by inserting it in the target
+5. Then point the subdomain to your desired domain by inserting it in the target  
 
 ## Unbound configuration
-To find what Unbound exactly is you can check out [the Pi-Hole documentation about Unbound](https://docs.pi-hole.net/guides/dns/unbound/)
-Perform the installation in the terminal of your PiHole instance.
-1. `sudo apt install unbound`
-2. `wget https://www.internic.net/domain/named.root -qO- | sudo tee /var/lib/unbound/root.hints`
-3. Create the following file - `sudo /etc/unbound/unbound.conf.d/pi-hole.conf
-4. Copy text below to add the basis configuration:
+To find what Unbound exactly is you can check out [the Pi-Hole documentation about Unbound](https://docs.pi-hole.net/guides/dns/unbound/)  
+Perform the installation in the terminal of your PiHole instance.  
+1. `sudo apt install unbound`  
+2. `wget https://www.internic.net/domain/named.root -qO- | sudo tee /var/lib/unbound/root.hints`  
+3. Create the following file - `sudo /etc/unbound/unbound.conf.d/pi-hole.conf  
+4. Copy text below to add the basis configuration:  
+  
 ```conf
 server:
     # If no logfile is specified, syslog is used
@@ -174,8 +176,8 @@ server:
     private-address: 203.0.113.0/24
     private-address: 255.255.255.255/32
     private-address: 2001:db8::/32
-```
-
+```  
+  
 5. Just to be sure reboot the server to apply the configuration  
 6. Perform the following command `dig pi-hole.net @127.0.0.1 -p 5335`  
    The first time this command will be slow, but the second time it should go a bit quicker.  
