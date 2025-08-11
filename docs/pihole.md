@@ -204,7 +204,7 @@ Pihole commands:
 - pihole -g - Update Pi-Hole gravity (block and allow lists)  
 
 Resources: 
-  
+   
 - [Basic install](https://docs.pi-hole.net/main/basic-install)  
 - [Post install](https://docs.pi-hole.net/main/post-install/)  
 - [Groups Management](https://docs.pi-hole.net/group_management/)  
