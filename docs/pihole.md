@@ -196,7 +196,7 @@ Now the configuration of Unbound is done you now use Unbound within Pi-Hole.
 ## Useful Pi-Hole command
 To close up I want to share some Pi-Hole commands which are useful for me.  
   
-Pihole commands:  
+### Pihole commands:  
   
 - pihole -up - Updating Pi-Hole  
 - pihole -v - Checking the Pi-Hole versions  
@@ -206,7 +206,7 @@ Pihole commands:
 - pihole enable - Enable Pi-Hole protection  
 - pihole -g - Update Pi-Hole gravity (block and allow lists)  
 
-Resources: 
+## Resources: 
    
 - [Basic install](https://docs.pi-hole.net/main/basic-install)  
 - [Post install](https://docs.pi-hole.net/main/post-install/)  
