@@ -1,5 +1,5 @@
 # Endurain  
-
+  
 ## Introduction  
 Workouts and nerd do not blend together. Right?  
 Most of the time they do not, but there are a few nerds who like to run.  
@@ -58,11 +58,11 @@ vim .env #Change the changme values in .env
 `````  
   
 ### Example .env file  
-
+  
 The values in the .env file are still on their defaults.  
 Of course for security reasons you will need to change the credentials and set the values to match your environment.
 After editing the .env file you are reading to bring the container up and check the logs if all goes well.
-
+  
 `````yaml linenums="1" title="Editing the .env file"  
 # This is an environment variable file for Endurain's docker-compose.yml.example  
 # These are just the variable you have to set to be up and running.  
@@ -90,9 +90,9 @@ ip a |  grep xxx.xxx.xxx # fill in the parts of the IP-address which you know of
 `````  
   
 When the Docker containers are up and running (no pun intended) without errors you can add the Endurain to your reserve proxy configuration (if you have set up a reserve proxy).  
-Afterwards you are now ready to navigate to your Endurain instance for the first time!
-
-Navigate to endurain.example.com and login with the default values first.
+Afterwards you are now ready to navigate to your Endurain instance for the first time!  
+  
+Navigate to endurain.example.com and login with the default values first.  
 login with admin - admin  
 Logged in, change the admin password someting stronger and create your own account.  
 
@@ -125,7 +125,7 @@ Logged in, change the admin password someting stronger and create your own accou
 	- Authorization token: Your authorization token which will change every six hours (please keep this confidential)  
 	- Your Refresh token: The token you will use to get a new authorization token (please keep this confidential)  
 	- Rate limits: Your current rate limit  
-	- Authorization Callback Domain: When building your app, change “Authorization Callback Domain” to localhost or any domain. When taking your app live, change “Authorization Callback Domain” to a real domain.  
+	- Authorization Callback Domain: When building your app, change “Authorization Callback Domain” to localhost or any domain. When taking your app live, change “Authorization Callback Domain” to a real domain  
   
 ### Testing your API  
   
@@ -136,7 +136,7 @@ https://www.strava.com/api/v3/athlete \
 -H 'Authorization: Bearer YOURACCESSTOKEN'  
 ````  
 After this you should see your Athlete information from Strava with the API-token you created.  
-2. Edit this URL - http://www.strava.com/oauth/authorize?client_id=[REPLACE_WITH_YOUR_CLIENT_ID]&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=read
+2. Edit this URL - http://www.strava.com/oauth/authorize?client_id=[REPLACE_WITH_YOUR_CLIENT_ID]&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=read  
 3. Open a browser and paste the edited URL  
 4. Hit enter  
 5. When you see the authorization page, click **Authorize**  
@@ -158,4 +158,9 @@ Replace the client_secret and code. The response should include the refresh toke
 5. Authorize Endurain  
 6. Under options you can optionally retrieve activities by days and retrieve gear, but when you connect the first time it should import those things automatically   
   
-After this challenging deploy you are now ready challenge yourself during the workouts.
+After this challenging deploy you are now ready challenge yourself during the workouts.  
+  
+## Resources  
+- [Endurain documentation](https://docs.endurain.com/)  
+- [Endurain Github](https://github.com/joaovitoriasilva/endurain)  
+- [Strava API setup guide](https://developers.strava.com/docs/getting-started/)
