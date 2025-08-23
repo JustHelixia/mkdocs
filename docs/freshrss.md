@@ -2,9 +2,14 @@
 
 ## Introduction
 A while back I was using a RSS reader and I wanted to find a self hosted solution to get news from websites I am interested in.  
-I find it easier to use a RSS reader rather than going to every website or using something Google news. Oh. There are no cookie walls.  
+I find it easier to use a RSS reader rather than going to every website or using something like Google news. Oh. There are no cookie walls.  
 Besides that you also can add Youtube channels to the feed by using their channels URL, (collections of) Subreddits in the old Reddit layout among other things.  
   
+In this deploy the application which connects to Postgres is going to deployed, but MariaDB and MySQL are supported too.  
+You also deploy this with Docker Compose without Portainer.  
+When you delete the database variables FreshRSS is going to use SQLite.  
+You are of course welcome to deploy FreshRSS however you want.  
+    
 ## Deploying
 1. Navigate to your Portainer instance
 2. Select your environment and navigate to **Stacks**
@@ -12,24 +17,74 @@ Besides that you also can add Youtube channels to the feed by using their channe
 4. Give the stack a name select the **Web editor** as build method
 5. Paste the Docker Compose configuration in the Web editor
 ```` yaml linenums="1" title="FreshRSS Config"
+volumes:
+  data:
+  extensions:
+  db:
+
 services:
   freshrss:
-    image: lscr.io/linuxserver/freshrss:latest
+    image: freshrss/freshrss:latest
     container_name: freshrss
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Amsterdam
-    volumes:
-      - ./config:/config
-    ports:
-      - 8686:80
+    hostname: freshrss
     restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+    volumes:
+      - data:/var/www/FreshRSS/data
+      - extensions:/var/www/FreshRSS/extensions
+    ports:
+      - 8080:80
+    environment:
+      TZ: Europe/Amsterdam
+      CRON_MIN: '3,33'
+      TRUSTED_PROXY: 172.16.0.1/12 192.168.0.1/16
+      FRESHRSS_INSTALL: |-
+        --api-enabled
+        --base-url ${BASE_URL}
+        --db-base ${DB_BASE}
+        --db-host ${DB_HOST}
+        --db-password ${DB_PASSWORD}
+        --db-type pgsql
+        --db-user ${DB_USER}
+        --default-user admin
+        --language en
+      FRESHRSS_USER: |-
+        --email ${ADMIN_EMAIL}
+        --language en
+        --password ${ADMIN_PASSWORD}
+        --user admin
+      depends_on:
+        - freshrss-db
+
+  freshrss-db:
+    image: postgres:17
+    container_name: freshrss-db
+    hostname: freshrss-db
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_BASE:-freshrss}
+      POSTGRES_USER: ${DB_USER:-freshrss}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-freshrss}
+    command:
+      # Examples of PostgreSQL tuning.
+      # https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
+      # When in doubt, skip and stick to default PostgreSQL settings.
+      - -c
+      - shared_buffers=1GB
+      - -c
+      - work_mem=32MB
 ````
 6. Then click on **Deploy stack**  
   
 ## Post deploying
-First go to your FreshRSS instance and walk through the installation process.  
+First go to your FreshRSS instance and go through the installation process.  
 Then login where you see the feeds about FreshRSS.  
 You can your add own RSS websites with an OPML file or add your RSS subscription manually.
 
@@ -39,7 +94,7 @@ You can your add own RSS websites with an OPML file or add your RSS subscription
 3. Then browse for your file and click on **Import**
   
 ### Adding your feeds manually
-Before it is a good idea to add a category.  
+Before you add a feed, it is a good idea to add a category.  
   
 1. Click on **Subscription management**
 2. Navigate to **Add a feed or category**
@@ -74,11 +129,12 @@ After the setting up the API access your use your username, API password and API
 On mobile I used Feedme, but I ended up liking Readrops more.  
 Both apps have the option to select FreshRSS as a service and setting it up is really easy.  
   
-On my Linux desktop I use the Newsflash app to read my subscriptions, but I ran into errors and I am reading the feed on my FreshRSS feed instead.
+On my Linux desktop I use the Newsflash app to read my subscriptions, but I ran into errors on Fedora and I am now reading the feed on my FreshRSS feed instead.
     
 ## Resources
 - [Lawrance's tutorial](https://www.youtube.com/watch?v=wcof-Noho9Q)
 - [Techdoxs tutuorial](https://www.youtube.com/watch?v=W0jRuq4v810)
+- [SYNACK Time tutorial](https://www.youtube.com/watch?v=4bG3_gM5KF0)
 - [FreshRSS website](https://www.freshrss.org/)  
 - [FreshRSS Github](https://github.com/FreshRSS/FreshRSS)  
 - [Third-party apps for FreshRSS](https://github.com/FreshRSS/FreshRSS/blob/edge/README.md#apis--native-apps)  
