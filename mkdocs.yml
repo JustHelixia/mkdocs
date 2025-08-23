@@ -23,6 +23,7 @@ nav:
     - Watchtower: watchtower.md
     - FreshRSS: freshrss.md
     - Homepage: homepage.md
+    - Endurain: endurain.md
   - Other deploys:
     - Snipe-IT: snipe-it.md
     - Ollama+Open-WebUI: ollama-openwebgui.md
